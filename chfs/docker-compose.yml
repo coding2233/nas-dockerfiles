@@ -1,0 +1,10 @@
+version: '3'
+services:
+  chfs:
+    build: .
+    volumes:
+      - /data/files:/data/files
+      - /data/media:/data/media
+    ports:
+      - "7899:80"
+    restart: always
